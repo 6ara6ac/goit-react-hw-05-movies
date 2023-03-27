@@ -6,11 +6,10 @@ import MoviesItem from "components/MovieItem"
 const Home = () => {
     const [movies, setMovies] = useState([])
 
+
     useEffect(()=> { getPopularMovies().then(({ results }) => {
         setMovies(results)
     })},[])
-
-
 
 
 
