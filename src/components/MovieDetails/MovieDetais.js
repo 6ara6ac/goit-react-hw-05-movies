@@ -16,8 +16,6 @@ const MovieDetais = () =>{
     useEffect(()=> {
         getMovieInfo(id).then(({data}) => setInfo(data))
     },[id])
-
-    console.log(info)
     
 
     const{title, vote_average, overview, poster_path, genres, release_date} = info;
